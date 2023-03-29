@@ -36,6 +36,30 @@ for( let i = 0; i < 10; i++ ) {
 
 console.log(`la somma totale è: ${somma}`)
 
+//snack4//
+
+const nomi = [
+    `simona,`
+    `marta,`
+    `mirco,`
+    `antonio,`
+]
+
+let indice = 0;
+
+let controllore = false;
+
+while( !controllore != true ){
+    let nome = prompt(`dami il tuo nome`)
+
+    if( nomi.includes(nome) ){
+        console.log(`sei invitato`)
+        controllore = nomi.includes(nome)
+    } else {
+        alert(`non sei invitato`)
+    }
+}
+
 //snack5//
 
 const arrayNumeri = [];
@@ -49,3 +73,14 @@ for(let i = 0; i < 6; i++) {
 }
 
 console.log ( arrayNumeri )
+
+//snack7//
+
+let limite = 1000;
+let n = 2;
+let potenza = 2;
+
+while( ( n *=potenza ) < 1000 ){
+    n *= potenza
+    console.log( n )
+}
